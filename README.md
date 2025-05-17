@@ -1,12 +1,3 @@
-Voici un exemple de **`README.md`** que tu peux déposer sur Git. Il suit les consignes données dans le sujet du TP et explique clairement :
-
-- À quoi sert chaque fichier  
-- Comment il a été créé  
-- Les interactions entre la carte SoC (VEEK-MT2S) et la VM  
-- Le processus de compilation croisée  
-
----
-
 # 🧾 README – TP Linux Embarqué
 
 Ce dépôt contient les fichiers relatifs au **TP Linux Embarqué**, incluant la création de modules noyau, l'accès aux registres matériels, la gestion d’un chenillard via `/proc`, et la communication entre la carte **SoC VEEK-MT2S** et une **machine virtuelle Ubuntu (VM-SOC-2019)**.
