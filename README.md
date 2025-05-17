@@ -72,14 +72,6 @@ sudo apt update
 sudo apt install bc crossbuild-essential-armhf binutils-multiarch
 ```
 
-### Récupération des sources du noyau :
-```bash
-git clone https://github.com/terasic/linux-socfpga/
-cd linux-socfpga
-git checkout 6b20a2929d54
-git config core.abbrev 7
-```
-
 ### Récupération de la configuration noyau depuis la carte :
 ```bash
 scp root@192.168.0.200:/proc/config.gz .
