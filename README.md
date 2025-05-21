@@ -1,10 +1,18 @@
-# 🧾 README – TP Linux Embarqué
+# README – TP Linux Embarqué
 
 Ce dépôt contient les fichiers relatifs au **TP Linux Embarqué**, incluant la création de modules noyau, l'accès aux registres matériels, la gestion d’un chenillard via `/proc`, et la communication entre la carte **SoC VEEK-MT2S** et une **machine virtuelle Ubuntu (VM-SOC-2019)**.
 
+##  Objectif du TP
+
+Ce TP a pour objectifs :
+- De comprendre comment fonctionne un module noyau sous Linux embarqué.
+- D’apprendre à compiler des modules noyaux en **cross-compilation**.
+- De manipuler les interfaces `/proc` et `/sys`.
+- De découvrir l’accès direct aux registres matériels via `mmap()`.
+- De mettre en œuvre un **chenillard** dans un module noyau configurable.
 ---
 
-## 📁 Structure du dépôt
+## Structure du dépôt
 
 | Fichier | Description |
 |--------|-------------|
@@ -15,13 +23,13 @@ Ce dépôt contient les fichiers relatifs au **TP Linux Embarqué**, incluant la
 
 ---
 
-## 🛠️ Comment les fichiers ont été créés
+## 🛠 Comment les fichiers ont été créés
 
 ### 1. **hello.c**
 Fichier C standard implémentant un module noyau basique. Il utilise les macros `module_init()`, `module_exit()`, ainsi que `printk()` pour communiquer avec le noyau.
 
 ### 2. **Makefile**
-Créé à partir des templates fournis dans le TP. Il est configuré pour pointer vers les sources du noyau Linux embarqué sur la VM :
+Créé à partir des templates fournis dans le cours. Il est configuré pour pointer vers les sources du noyau Linux embarqué sur la VM :
 ```makefile
 obj-m := hello.o
 
@@ -40,7 +48,7 @@ Programme utilisateur écrit en C utilisant `mmap()` pour accéder aux registres
 
 ---
 
-## 🌐 Interactions entre la VM et la carte SoC
+##  Interactions entre la VM et la carte SoC
 
 ### Connexion SSH à la carte SoC :
 ```bash
@@ -63,7 +71,7 @@ La carte VEEK-MT2S est alimentée par une image Linux embarquée. Elle possède 
 
 ---
 
-## 🔀 Compilation croisée sur la VM
+##  Compilation croisée sur la VM
 
 ### Prérequis :
 Installation des outils nécessaires sur la VM :
@@ -97,7 +105,7 @@ Le résultat est un fichier `.ko` prêt à être chargé sur la carte SoC.
 
 ---
 
-## 🧪 Objectif du TP
+##  Objectif du TP
 
 Ce TP a pour objectifs :
 - De comprendre comment fonctionne un module noyau sous Linux embarqué.
