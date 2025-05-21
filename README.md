@@ -105,12 +105,5 @@ Le résultat est un fichier `.ko` prêt à être chargé sur la carte SoC.
 
 ---
 
-##  Objectif du TP
 
-Ce TP a pour objectifs :
-- De comprendre comment fonctionne un module noyau sous Linux embarqué.
-- D’apprendre à compiler des modules noyaux en **cross-compilation**.
-- De manipuler les interfaces `/proc` et `/sys`.
-- De découvrir l’accès direct aux registres matériels via `mmap()`.
-- De mettre en œuvre un **chenillard** dans un module noyau configurable.
 
