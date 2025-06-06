@@ -23,7 +23,7 @@ Ce TP a pour objectifs :
 
 ---
 
-## 🛠 Comment les fichiers ont été créés
+## Comment les fichiers ont été créés
 
 ### 1. **hello.c**
 Fichier C standard implémentant un module noyau basique. Il utilise les macros `module_init()`, `module_exit()`, ainsi que `printk()` pour communiquer avec le noyau.
