@@ -109,6 +109,9 @@ insmod hello.ko
 ### Verification des messages noyau :
 ```bash
 dmesg | tail
+![image](https://github.com/user-attachments/assets/6ff9fad4-c3fc-43a5-9ab1-8422d0d409b5)
+
+
 ```
 
 ### Affichage des modules charges :
