@@ -74,13 +74,6 @@ La carte VEEK-MT2S est alimentée par une image Linux embarquée. Elle possède 
 
 ## Compilation croisée sur la VM
 
-### Prérequis :
-Installation des outils nécessaires sur la VM :
-```bash
-sudo apt update
-sudo apt install bc crossbuild-essential-armhf binutils-multiarch
-```
-
 ### Récupération de la configuration noyau depuis la carte :
 ```bash
 scp root@192.168.0.250:/proc/config.gz .
