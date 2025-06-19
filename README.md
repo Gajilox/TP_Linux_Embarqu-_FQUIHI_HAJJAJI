@@ -1,6 +1,3 @@
-Voici une version **révisée et optimisée** de ton `README`, sans répétitions, avec une structure claire et logique. J’ai regroupé les informations similaires et supprimé les redondances tout en conservant toutes les informations utiles.
-
----
 
 # README – TP Linux Embarqué
 
